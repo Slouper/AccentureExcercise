@@ -2,6 +2,12 @@ package countdown;
 
 import java.util.logging.Logger;
 
+/**
+ * Performs countdown from 100 to 1 with following rules: <br/>
+ *
+ * Prints: 'Agile' if the number is divisible by 5, 'Software' if the number is divisible by 3, 'Testing' if the number is divisible by both,
+ * or prints just the number if none of those cases are true.
+ */
 public class CountdownApp {
   private static final Logger LOG = Logger.getLogger(CountdownApp.class.getName());
 

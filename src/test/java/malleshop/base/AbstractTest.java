@@ -1,8 +1,9 @@
-package eshopselenium.base;
+package malleshop.base;
 
-import eshopselenium.factory.DriverPoolManager;
+import malleshop.factory.DriverPoolManager;
 import org.testng.annotations.AfterSuite;
 
+@SuppressWarnings("squid:S1610" /* TestNG does not work for interfaces */)
 public abstract class AbstractTest {
 
   @AfterSuite

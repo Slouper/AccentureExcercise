@@ -1,4 +1,4 @@
-package eshopselenium.factory;
+package malleshop.factory;
 
 import static java.lang.String.format;
 
@@ -9,10 +9,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class DriverPoolManager {
-
   private static final Logger LOG = Logger.getLogger(DriverPoolManager.class.getName());
   private static final HashMap<Object, WebDriver> driverPool = new HashMap<>();
   private static final int IMPLICIT_WAIT_SEC = 30;
+
+  private DriverPoolManager() {
+    // Static class, constructor is not used
+  }
 
   public static WebDriver provideDriver() {
     return provideDriverByThread(Thread.currentThread());
