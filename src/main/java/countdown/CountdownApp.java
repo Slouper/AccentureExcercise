@@ -8,7 +8,7 @@ import java.util.logging.Logger;
  * Prints: 'Agile' if the number is divisible by 5, 'Software' if the number is divisible by 3, 'Testing' if the number is divisible by both,
  * or prints just the number if none of those cases are true.
  */
-public class CountdownApp {
+class CountdownApp {
   private static final Logger LOG = Logger.getLogger(CountdownApp.class.getName());
   private static final String TESTING = "Testing";
   private static final String AGILE = "Agile";

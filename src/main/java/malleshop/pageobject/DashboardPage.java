@@ -6,7 +6,7 @@ import org.openqa.selenium.Keys;
 
 public class DashboardPage extends AbstractPage {
 
-  private By searchInputBy = By.id("form-sitesearch-input");
+  private static By searchInputBy = By.id("form-sitesearch-input");
 
   public void setSearchInput(String productName) {
     inputs().setValue(searchInputBy, productName);

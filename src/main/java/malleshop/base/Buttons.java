@@ -11,8 +11,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class Buttons {
   private static final Logger LOG = Logger.getLogger(Buttons.class.getName());
-  private AbstractPage ownerPage;
-  private Actions actions;
+  private final AbstractPage ownerPage;
+  private final Actions actions;
 
   Buttons(AbstractPage ownerPage) {
     this.ownerPage = ownerPage;

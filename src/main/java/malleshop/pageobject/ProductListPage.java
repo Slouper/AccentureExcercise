@@ -10,11 +10,11 @@ import org.openqa.selenium.WebElement;
 @SuppressWarnings("FieldCanBeLocal")
 public class ProductListPage extends AbstractPage {
 
-  private By sortHighestPriceAnchor = By.xpath("//a[@data-sel='sort-highPrice']/parent::*");
-  private By productArticlesBy = By.xpath("//article[contains(@id,'list')]");
+  private static By sortHighestPriceAnchor = By.xpath("//a[@data-sel='sort-highPrice']/parent::*");
+  private static By productArticlesBy = By.xpath("//article[contains(@id,'list')]");
 
-  private String productArticleXpath = "//article[contains(@id,'list')][%s]";
-  private String addToCartButtonXpath = "//*[normalize-space(text())='Přidat do košíku']/ancestor::button[1]";
+  private static String productArticleXpath = "//article[contains(@id,'list')][%s]";
+  private static String addToCartButtonXpath = "//*[normalize-space(text())='Přidat do košíku']/ancestor::button[1]";
 
   public ProductListPage clickOnSortingByHighestPrice() {
     buttons().performClick(sortHighestPriceAnchor);

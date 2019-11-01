@@ -11,8 +11,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class Inputs {
   private static final Logger LOG = Logger.getLogger(Inputs.class.getName());
-  private AbstractPage ownerPage;
-  private Actions actions;
+  private final AbstractPage ownerPage;
+  private final Actions actions;
 
   Inputs(AbstractPage ownerPage) {
     this.ownerPage = ownerPage;
