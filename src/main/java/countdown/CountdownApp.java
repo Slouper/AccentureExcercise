@@ -10,6 +10,9 @@ import java.util.logging.Logger;
  */
 public class CountdownApp {
   private static final Logger LOG = Logger.getLogger(CountdownApp.class.getName());
+  private static final String TESTING = "Testing";
+  private static final String AGILE = "Agile";
+  private static final String SOFTWARE = "Software";
 
   public static void main(String[] args) {
     countDown();
@@ -19,11 +22,11 @@ public class CountdownApp {
     int i = 100;
     while (i >= 1) {
       if (i % 5 == 0 && i % 3 == 0) {
-        LOG.info("Testing");
+        LOG.info(TESTING);
       } else if (i % 5 == 0) {
-        LOG.info("Agile");
+        LOG.info(AGILE);
       } else if (i % 3 == 0) {
-        LOG.info("Software");
+        LOG.info(SOFTWARE);
       } else {
         LOG.info(String.valueOf(i));
       }
